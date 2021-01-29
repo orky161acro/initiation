@@ -6,17 +6,11 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-# host = os.environ.get("MYSQL_HOST")
-# port = int(os.environ.get("MYSQL_PORT"))
-# user = os.environ.get("MYSQL_USER")
-# passwd = os.environ.get("MYSQL_PASSWORD")
-# dbName = os.environ.get("MYSQL_DATABASE")
-
-host = "localhost"
-port = 3306
-user = "my_user"
-passwd = "some_password_123"
-dbName = "the_database"
+host = os.environ.get("MYSQL_HOST")
+port = int(os.environ.get("MYSQL_PORT"))
+user = os.environ.get("MYSQL_USER")
+passwd = os.environ.get("MYSQL_PASSWORD")
+dbName = os.environ.get("MYSQL_DATABASE")
 
 mydb = mysql.connector.connect(host=host, port=port, user=user, passwd=passwd, db=dbName)
 
