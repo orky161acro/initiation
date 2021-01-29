@@ -1,0 +1,49 @@
+CREATE TABLE IF NOT EXISTS customers
+(
+    id                 varchar(30) primary key not null,
+    first_name         varchar(30) not null,
+    last_name          varchar(30) null,
+    email              varchar(60) null,
+    gender             varchar(10) null,
+    country            varchar(30) null,
+    city               varchar(30) null,
+    street             varchar(30) null,
+    phone              varchar(30) null,
+    credit_card_type   varchar(30) null,
+    credit_card_number bigint         null,
+    constraint customers_id_uindex unique (id)
+);
+ALTER TABLE customers ADD INDEX (id);
+
+CREATE TABLE IF NOT EXISTS transactions
+(
+    id       int auto_increment primary key,
+    customer varchar(30) null,
+    product  varchar(30) null,
+    total_price        double      null,
+    currency           varchar(30) null,
+    constraint transactions_customers_id_fk
+        foreign key (customer) references customers (id)
+            on update set null
+);
+ALTER TABLE transactions ADD INDEX (id);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
