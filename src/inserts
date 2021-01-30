@@ -72,7 +72,7 @@ INSERT INTO the_database.customers (id, first_name, last_name, email, gender, co
 INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (1, '869-03-0902', 'apple', 13, 'NIO', 'mastercard', 5010126046192324);
 INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (2, '215-75-1068', 'banana', 16, 'NIO', '-electron', 4508672811329403);
 INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (3, '784-97-6070', 'apple', 16, 'NIO', 'jcb', 3537300561420746);
-INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (4, '441-99-6890', 'apple', 13, 'NIO', 'visa', 4041371907379);
+INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (4, '788-15-8280', 'apple', 13, 'NIO', 'visa', 4041371907379);
 INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (5, '207-11-9311', 'orange', 19, 'NIO', 'switch', 633110643696828708);
 INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (6, '340-13-2068', 'cherry', 22, 'NIO', 'jcb', 3555799617754676);
 INSERT INTO the_database.transactions (id, customer, product, total_price, currency, credit_card_type, credit_card_number) VALUES (7, '603-96-9121', 'apple', 34, 'NIO', 'jcb', 3570774585323755);
